@@ -1,10 +1,19 @@
+:root {
+    --default-font-size: 16px;
+    --heading-font-size: 48px;
+    --subheading-font-size: 36px;
+  }
+*{
+    font-family: "Inter", sans-serif;
+}
 .App{
     width: 1440px;
     /* border: 1px solid green; */
     margin: auto;
 }
 
-/* header image css  */
+
+/* header part styling  */
 .header_img_container{
     height: 320px;
     box-sizing: border-box;
@@ -31,7 +40,7 @@
 .header_heading h1{
     font-weight: 700;
     line-height: 58.09px;
-    font-size: 48px;
+    font-size: var(--heading-font-size);
     color: #CA2531;
     padding: 0;
     margin: 0;
@@ -39,7 +48,7 @@
 .header_heading p{
     font-weight: 600;
     line-height: 26.97px;
-    font-size: 16px;
+    font-size: var(--default-font-size);
     /* color: #CA2531; */
     padding: 0;
     margin: 0;
@@ -54,3 +63,76 @@
     position: absolute;
     filter: brightness(0);
 }
+
+/* styling to body part  */
+
+.content{
+    padding: 48px;
+    /* border: 1px solid green; */
+}
+.sidebar{
+    width: 360px;
+    height: 976px;
+    border-radius: 20px;
+    background: #FFD098;
+    padding-left: 24px;
+    padding-top: 48px;
+}
+.sidebar h1{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: var(--subheading-font-size);
+    line-height: 43.57px;
+    margin-top: 0;
+}
+.sidebar>p{
+    font-size: var(--default-font-size);
+    font-weight: 400;
+    line-height: 24px;
+    color: #121212A3;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    color:  #121212A3;
+    font-weight: 400;
+    font-size: var(--default-font-size);
+    line-height: 19.36px;
+}
+.number{
+    background: #FFFFFFA3;
+    width: 48px;
+    height: 48px;
+    border-radius: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#menu{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 15px;
+}
+hr{
+    width: 48px;
+    transform: rotate(90deg);
+    border: 1px dashed #12121229;
+    position: absolute;
+    bottom: -36px;
+}
+.active{
+    background-color: #DC3545;
+    color: white;
+}
+.active+p{
+    color:  #121212;
+    font-weight: 500;
+}
+.none{
+    display: none;
+}
+
+  
