@@ -11,7 +11,7 @@
     overflow: hidden;
     position: relative;
 }
-.header_img_container img{
+.header_img_container>img{
     width: 1611px;
     height: 370PX;
     object-fit: cover;
@@ -43,9 +43,14 @@
     /* color: #CA2531; */
     padding: 0;
     margin: 0;
+    width: 550px;
 }
 .header_logo{
-    width: 5px;
+    /* width: 5px; */
     height: 77.35px;
     color: black;
+    top: 20px;
+    right: 5px;
+    position: absolute;
+    filter: brightness(0);
 }
