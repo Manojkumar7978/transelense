@@ -7,11 +7,12 @@ import Sidebar from './components/sidebar';
 function App() {
   return (
     <div className="App">
-      <Router/>
       <Haderimg/>
       <div className='content'>
         <Sidebar/>
+        <Router/>
       </div>
+      
     </div>
   );
 }

@@ -2,11 +2,13 @@
     --default-font-size: 16px;
     --heading-font-size: 48px;
     --subheading-font-size: 36px;
-  }
-*{
+}
+
+* {
     font-family: "Inter", sans-serif;
 }
-.App{
+
+.App {
     width: 1440px;
     /* border: 1px solid green; */
     margin: auto;
@@ -14,13 +16,14 @@
 
 
 /* header part styling  */
-.header_img_container{
+.header_img_container {
     height: 320px;
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
 }
-.header_img_container>img{
+
+.header_img_container>img {
     width: 1611px;
     height: 370PX;
     object-fit: cover;
@@ -29,15 +32,17 @@
     top: -55px;
     position: relative;
 }
-.header_heading{
+
+.header_heading {
     width: 588.47px;
     height: 186px;
     position: absolute;
     top: 70px;
-    left: 750.69px ;
+    left: 750.69px;
     font-family: "Inter", sans-serif;
 }
-.header_heading h1{
+
+.header_heading h1 {
     font-weight: 700;
     line-height: 58.09px;
     font-size: var(--heading-font-size);
@@ -45,7 +50,8 @@
     padding: 0;
     margin: 0;
 }
-.header_heading p{
+
+.header_heading p {
     font-weight: 600;
     line-height: 26.97px;
     font-size: var(--default-font-size);
@@ -54,7 +60,8 @@
     margin: 0;
     width: 550px;
 }
-.header_logo{
+
+.header_logo {
     /* width: 5px; */
     height: 77.35px;
     color: black;
@@ -64,13 +71,20 @@
     filter: brightness(0);
 }
 
-/* styling to body part  */
+/* content section styling  */
 
-.content{
+.content {
     padding: 48px;
     /* border: 1px solid green; */
+    display: flex;
+    gap: 48px;
 }
-.sidebar{
+
+/* styling to body part  */
+
+
+
+.sidebar {
     width: 360px;
     height: 976px;
     border-radius: 20px;
@@ -78,29 +92,33 @@
     padding-left: 24px;
     padding-top: 48px;
 }
-.sidebar h1{
+
+.sidebar h1 {
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: var(--subheading-font-size);
     line-height: 43.57px;
     margin-top: 0;
 }
-.sidebar>p{
+
+.sidebar>p {
     font-size: var(--default-font-size);
     font-weight: 400;
     line-height: 24px;
     color: #121212A3;
 }
-.menu{
+
+.menu {
     display: flex;
     flex-direction: column;
     gap: 48px;
-    color:  #121212A3;
+    color: #121212A3;
     font-weight: 400;
     font-size: var(--default-font-size);
     line-height: 19.36px;
 }
-.number{
+
+.number {
     background: #FFFFFFA3;
     width: 48px;
     height: 48px;
@@ -110,29 +128,25 @@
     align-items: center;
     position: relative;
 }
-#menu{
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    margin-bottom: 15px;
-}
-hr{
+
+hr {
     width: 48px;
     transform: rotate(90deg);
     border: 1px dashed #12121229;
     position: absolute;
     bottom: -36px;
 }
-.active{
+
+.active {
     background-color: #DC3545;
     color: white;
 }
-.active+p{
-    color:  #121212;
+
+.active+p {
+    color: #121212;
     font-weight: 500;
 }
-.none{
+
+.none {
     display: none;
 }
-
-  
