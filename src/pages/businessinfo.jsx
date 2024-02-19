@@ -54,15 +54,18 @@ export default function Businessinfo() {
                 type:'active',
                 payload:2
             })
+            setTimeout(()=>{
+                navigate('/ownerinfo')
+            },700)
             dispatch({
                 type:'businessInfo',
                 payload:{...businessInfo}
             })
             localStorage.setItem("businessInfo",JSON.stringify(businessInfo))
-            navigate('/ownerinfo')
         }
     }
 
+      
 
 return (
     <div className='input_section'>
@@ -292,9 +295,9 @@ return (
                 <div style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                     <label for="fileInput" class="file-upload">
                         <span>Click to upload</span>
-                        <input type="file" id="fileInput" name="Image" onChange={(event) => {
-                            handelInputChange(event)
-                        }} accept=".jpg, .jpeg, .png" />
+                        <input onchange={(e)=>{
+                            handelInputChange(e)
+                        }} type="file" id="fileInput" name="Image"  accept=".jpg, .jpeg, .png" />
                     </label>
                     <button
                         style={{
