@@ -8,7 +8,7 @@ let businessInfo = JSON.parse(localStorage.getItem("businessInfo")) || {
     Close: "",
     Email: "",
     Mob: "",
-    Image: ""
+    Image: "XYZ.JPEG"
 }
 let ownerDetails =JSON.parse(localStorage.getItem("ownerDetails")) ||
  {

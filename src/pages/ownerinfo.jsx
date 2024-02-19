@@ -57,6 +57,8 @@ export default function Ownerinfo() {
     }
 }
 
+let busEmail=useSelector((data)=>{return data.businessInfo.Email})
+let busMob=useSelector((data)=>{return data.businessInfo.Mob})
     return (
         <div className='input_section'>
             <h1>Owner & Manager Details</h1>
@@ -161,6 +163,10 @@ export default function Ownerinfo() {
                      onChange={()=>{
                         setSameasBusinessmail(!sameAsBusineesmail)
                         setEmailBtn("Verified")
+                       setOwnerDetails({
+                        ...ownerDetails,
+                        Email:JSON.parse(localStorage.getItem("businessInfo"))
+                       })
                     }}
                     style={!sameAsBusineesmail && emailButton==='Send OTP' ?{}:{display:'none'}}
                     htmlFor="bullet-input" className='bullet-input'>
@@ -235,6 +241,10 @@ export default function Ownerinfo() {
                     onChange={()=>{
                         setSame(!sameAsBusiness)
                         setMobBtn("Verified")
+                        setOwnerDetails({
+                            ...ownerDetails,
+                            Mob:busMob
+                        })
                     }}
                     style={!sameAsBusiness && mobileBtn==='Send OTP'?{}:{display:'none'}}
                     htmlFor="bullet-input" className='bullet-input'>
